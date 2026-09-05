@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ZONALIBROS</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        ZONALIBROS
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="registro.html">
+            Registrarse
+        </a>
+
+        <a href="login.html">
+            Iniciar sesión
+        </a>
+
+    </nav>
+
+</header>
+
+<main class="contenedor-formulario">
+
+    <section class="formulario">
+        <h1>Crear cuenta</h1>
+
+        <p>
+            Completa los siguientes datos para registrarte.
+        </p>
+
+
+        <form id="formRegistro">
+
+
+            <!-- registgro del nombreq -->
+
+            <label for="nombre">
+                Nombre completo
+            </label>
+
+            <input
+                    type="text"
+                    id="nombre"
+                    maxlength="100"
+                    autocomplete="name"
+                    placeholder="Ej: Juan Pérez"
+            >
+
+            <span id="errorNombre" class="error"></span>
+
+
+            <!-- registro corero -->
+
+            <label for="correo">
+                Correo electrónico
+            </label>
+
+            <input
+                    type="email"
+                    id="correo"
+                    maxlength="60"
+                    autocomplete="email"
+                    placeholder="usuario@duoc.cl"
+            >
+
+            <span id="errorCorreo" class="error"></span>
+
+
+            <!-- registgro contra -->
+
+            <label for="password">
+                Contraseña
+            </label>
+
+            <input
+                    type="password"
+                    id="password"
+                    autocomplete="new-password"
+                    placeholder="Ingresa tu contraseña"
+            >
+
+            <small>
+                Mínimo 10 caracteres, una mayúscula,
+                una minúscula, un número y un carácter especial.
+            </small>
+
+            <span id="errorPassword" class="error"></span>
+
+
+            <!-- confirmo vcornta -->
+
+            <label for="confirmarPassword">
+                Confirmar contraseña
+            </label>
+
+            <input
+                    type="password"
+                    id="confirmarPassword"
+                    autocomplete="new-password"
+                    placeholder="Repite tu contraseña"
+            >
+
+            <span id="errorConfirmar" class="error"></span>
+
+
+            <!-- telegfono -->
+
+            <label for="telefono">
+                Teléfono (opcional)
+            </label>
+
+            <input
+                    type="tel"
+                    id="telefono"
+                    autocomplete="tel"
+                    placeholder="Ej: +56912345678"
+            >
+
+            <span id="errorTelefono" class="error"></span>
+
+
+            <!-- generos de pelis -->
+
+            <fieldset>
+
+                <legend>
+                    Género favorito
+                </legend>
+
+                <p>
+                    Selecciona uno:
+                </p>
+
+
+                <label class="check">
+
+                    <input
+                            type="checkbox"
+                            name="genero"
+                            value="FICCION"
+                    >
+
+                    Ficción
+
+                </label>
+
+
+                <label class="check">
+
+                    <input
+                            type="checkbox"
+                            name="genero"
+                            value="NO FICCION"
+                    >
+
+                    No ficción
+
+                </label>
+
+
+                <label class="check">
+
+                    <input
+                            type="checkbox"
+                            name="genero"
+                            value="MISTERIO"
+                    >
+
+                    Misterio
+
+                </label>
+
+
+                <label class="check">
+
+                    <input
+                            type="checkbox"
+                            name="genero"
+                            value="TERROR"
+                    >
+
+                    Terror
+
+                </label>
+
+
+                <label class="check">
+
+                    <input
+                            type="checkbox"
+                            name="genero"
+                            value="SUSPENSO"
+                    >
+
+                    Suspenso
+
+                </label>
+
+
+                <label class="check">
+
+                    <input
+                            type="checkbox"
+                            name="genero"
+                            value="HISTORIA"
+                    >
+
+                    Historia
+
+                </label>
+
+
+                <span
+                        id="errorGenero"
+                        class="error"
+                ></span>
+
+            </fieldset>
+
+
+            <div id="mensajeRegistro"></div>
+
+
+            <button
+                    type="submit"
+                    class="boton formulario-boton"
+            >
+                Registrarse
+            </button>
+
+
+        </form>
+
+
+        <p class="abajo">
+
+            ¿Ya tienes una cuenta?
+
+            <a href="login.html">
+                Inicia sesión
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 ZONALIBROS - Proyecto académico DSY1104
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
